@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE'S STITCHES</title>
+   <!-- some/6.0.0 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awe/css/all.min.css"/> -->
+    <style>
+       * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color:rgb(17, 97, 246);
+            background-color: rgb(158, 172, 178);
+            transition: all 0.3s ease;
+
+        }
+        header{
+            background-color: rgb(160, 186, 208);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            
+            position: fixed;
+            box-shadow: o 2px 10px rosybrown;
+            width: 100%;
+            top: 0;
+            z-index: 1000; 
+             transition: all 0.3s ease;
+        }
+        nav{
+            max-width: 1200px;
+            margin:0 auto;
+            padding:1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        } 
+.logo{
+    color: rgb(35, 35, 151);
+    
+}
+.nav-toggle{
+    display: none;
+    gap: 1rem;
+    align-items: center;
+}
+#theme-toggle,
+#menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color:rgb(37, 37, 82) ;
+  transition: all 0.3s ease ;
+}
+#theme-toggle:hover,
+#menu-toggle:hover {
+  color: rgb(58, 58, 164);
+}
+#menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+}
+#menu-toggle span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(42, 100, 150);
+    transition: all 0.3s ease;
+}
+#menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+#menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.nav-lists{
+    display: flex;
+    gap:2rem;
+    list-style:circle;
+}
+.nav-lists a {
+    text-decoration:wavy;
+    color: rgb(45, 35, 137);
+    font-weight: 500;
+display:flex;
+}
+.nav-lists a:hover{
+    color:rgb(27, 27, 126)
+}
+main{
+    margin-top: 4rem;
+}
+section{
+    padding: 4rem 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: rgb(31, 10, 219);
+}
+h1{
+    font-size: xx-large;
+}
+#home{
+    background: url("https://cyprusuniversities.com/wp-content/uploads/2022/11/fashion-and-image-design.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(21, 19, 19);
+    position: relative;
+    overflow: hidden;
+}
+   
+ </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-shirt></i>
+                NIKE STITCHES
+            </div>
+            <div class="nav-toggle">
+                <button class="theme-toggle" aria-label="toggle-theme">
+                    <i class="fas fa-moon">
+                    </i>
+                </button>
+                <button id="menu toggle" aria-label="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                    </div>
+                    <ul class="nav-lists">
+                        <li>
+                            <i fas fa-home></i>
+                            <a href="/" class="nav-links">
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <i fas></i>
+                            <a href="/" class="nav-links">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" class="nav-links">
+                                SERVICES
+                            </a>
+                        </li>
+                        <li>
+                            <i fas fa-phone></i>
+                            <a href="/" class="nav-links">
+                            CONTACT US
+                            </a>
+                        </li>
+                        <li>
+                            <I fas fa-book></I>
+                            <a href="/" class="nav-links">
+                                BOOK APOINTMENT
+                            </a>
+                        </li>
+                        <li>
+                            <i fas fa-store></i>
+                            <a href="/" class="nav-links">
+                                SHOP
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <hi>
+                NIKE'S STITCHES
+            </hi>
+            <p>
+                Making people look good is our priority
+
+            </p>
+        </section>
+        <section id="about">
+            <h2>About us</h2>
+            <div class="about-container">
+            <p>
+            Your Ultimate Destination For Stylish And Trendy Clothes
+            </p>
+</div>
+        </section>
+        <section id="services">
+           <h2>
+            Our Services
+           </h2> 
+           <div class="service-grid">
+            <div class="service-card">
+                <h3>
+                    <i></i>
+                    We Specialize In All Kind of Ladies And Children Wears
+                </h3>
+                <p>
+                    Ladies Wear
+                </p>
+                <li>
+                    Gowns
+                </li>
+                <li>
+                    Skirts
+                </li>
+                <li>
+                    Two piece
+                </li>
+                <li>
+                    Kaftans
+                </li>
+                <li>
+                    Blouse And Tops
+                </li>
+                <li>
+            Ladies Trousers
+                </li>
+                <p>
+                    Children's Wear
+                </p>
+                <li>
+                    Ball Gowns
+                </li>
+                <li>
+                    Straight Gowns
+                </li>
+                <li>
+                    Skirts
+                </li>
+            </div>
+           </div>
+        </section>
+        <section id="contact us">
+            <h2>
+                Contact us
+            </h2>
+            <div class="contact-container">
+                <p>
+                    <i fas fa-location></i>
+                    7,Oladipupo shipe Fagbile Road
+                </p>
+                <p>
+                <i fas fa-phone></i>
+                (+234)9137480951
+                </p>
+                <p>
+                    <i fas fa-envelope></i>
+                    hussainfathia443@gmail.com
+                </p>
+            </div>
+        </section>
+    </main>
+    </main>
+</body>                
+</html>
